@@ -117,7 +117,3 @@ print(f'MAPE for Kats: {mape_kats:.2f}%')
 In summary, this code and methodology offer a systematic framework for evaluating and showcasing the outcomes of time-series forecasting models. These models have proven their efficacy in attaining the target Mean Absolute Percentage Error (MAPE) of 9% for Walmart's sales prediction. Furthermore, it facilitates comprehensive scrutiny and discourse regarding the outcomes and their implications for business processes.
 _______________________________________________________________________________________________________________
 
-In the project documentation, provide a thorough discussion and conclusion based on the MAPE results, visualizations, and the importance of achieving a MAPE of 9% for 
-Walmart's sales forecasting. Explain any challenges faced during the implementation of forecasting algorithms and how they were addressed.
-
-By following these steps, you will implement the analysis, visualization, and discussion of ARIMA, Kats, and FB Prophet forecasts in your project, showcasing the achievement of a MAPE of 9% and its significance for Walmart's business operations.
