@@ -86,4 +86,32 @@ We highlighted the main characteristics of the time series data in a visual form
 
 _______________________________________________________________________________________________________________________________________
 
+## Summary
+
+This project will focus on understanding a specific way of analyzing a sequence of data points gathered over a period. The time series analysis deals with data points at consistent intervals over a specific period rather than just recording the data points randomly. This project utilizes data visualization techniques for users to see seasonal trends and the reasons why these trends occur. It also resonates with analyzing data over consistent intervals for time series forecasting to predict the occurrence of future events. This is also a part of predictive analytics. Further, this project goes on to find the three most important aspects seasonality, autocorrelation, and stationarity, where seasonality is the periodic fluctuations, autocorrelation is the similarity between observations as a function of the time lag between them, and stationarity checks for constant mean and variance and whether covariance is independent of time or not. 
+_______________________________________________________________________________________________________________________________
+
+## Infrastructure components (Technologies used)
+
+* The data analysis will be carried out in a Jupyter Notebook using Python.
+* Effective libraries are available in Jupyter for creating regression models.
+* Data processing is also simple and fast using Python.
+* Pre-processing of the data will be required, and Python can make it simple to clean and process the data.
+* With the aid of libraries like Seaborn that use Matplotlib, Jupiter allows visualizations and provides rendering for some data 
+  sets, including visuals and charts that are generated from codes.
+* With Jupyter, users may share their code and data sets with others and narrate their visualizations, allowing for interactive 
+  improvements.
+
+_________________________________________________________________________________________________________________________
+
+## References:
+
+Varsharam. (2022, September 20). Timeseries-analysis. Kaggle. Retrieved December 3, 2022, from https://www.kaggle.com/code/varsharam/timeseries-analysis
+
+Time series analysis: Definition, types, techniques, and when it's used. Tableau. (n.d.). Retrieved December 3, 2022, from https://www.tableau.com/learn/articles/time-series-analysis
+
+Sign in. RPubs. (n.d.). Retrieved December 3, 2022, from https://rpubs.com/maupatel7/WalmartTimeSeries
+
+6.4. introduction to time series analysis. (n.d.). Retrieved December 3, 2022, from https://www.itl.nist.gov/div898/handbook/pmc/section4/pmc4.htm
+
 
