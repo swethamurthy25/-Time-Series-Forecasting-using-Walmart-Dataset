@@ -1,5 +1,22 @@
 # Forecast Using ARIMA, Kats, and FB Prophet
 
+### ARIMA (AutoRegressive Integrated Moving Average):
+
+* The arima_forecast function defines an ARIMA model with specified orders (p, d, q) and seasonal orders (P, D, Q, S).
+* The model is fitted to historical data, and forecasts are generated for future periods.
+
+### FB Prophet:
+
+* The prophet_forecast function defines a Prophet model.
+* The model is fitted to historical data using the 'ds' (Date) and 'y' (WeeklyRevenue) columns.
+* Future data points are created, and forecasts are generated for future periods.
+
+### Kats:
+
+* The kats_forecast function loads the data into a TimeSeriesData object and computes time series features using Kats.
+* The forecast is obtained from the computed model.
+
+  
 ```python
 # Import necessary libraries and load your dataset
 import pandas as pd
@@ -47,6 +64,10 @@ kats_results = kats_forecast(df)
 
 ## Visualization and Calculation of MAPE
 
+* This step involves visualizing the actual vs. forecasted values for each forecasting method and calculating the Mean Absolute Percentage Error (MAPE) for each model.
+* For each forecasting method (ARIMA, Prophet, and Kats), the actual weekly revenue values and the forecasted values are plotted.
+* MAPE is calculated using the calculate_mape function, which measures the accuracy of the forecasts.
+  
 ```python
 # Plot actual vs. forecasted values for ARIMA
 plt.figure(figsize=(12, 6))
@@ -92,6 +113,9 @@ print(f'MAPE for Kats: {mape_kats:.2f}%')
 ```
 
 ## Discussion and Conclusion
+
+In summary, this code and methodology offer a systematic framework for evaluating and showcasing the outcomes of time-series forecasting models. These models have proven their efficacy in attaining the target Mean Absolute Percentage Error (MAPE) of 9% for Walmart's sales prediction. Furthermore, it facilitates comprehensive scrutiny and discourse regarding the outcomes and their implications for business processes.
+_______________________________________________________________________________________________________________
 
 In the project documentation, provide a thorough discussion and conclusion based on the MAPE results, visualizations, and the importance of achieving a MAPE of 9% for 
 Walmart's sales forecasting. Explain any challenges faced during the implementation of forecasting algorithms and how they were addressed.
