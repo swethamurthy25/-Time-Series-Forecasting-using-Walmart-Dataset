@@ -314,3 +314,48 @@ mean_df.plot(kind='bar', y='Mean_Weekly_Sales', figsize=(8,8))
 ![image](https://github.com/swethamurthy25/-Time-Series-Forecasting-using-Walmart-Dataset/assets/112581595/7c4d4cc4-26a2-4b49-9584-251f20019fc2)
 
 ![image](https://github.com/swethamurthy25/-Time-Series-Forecasting-using-Walmart-Dataset/assets/112581595/907ed632-a9de-4852-9dd5-dd0ca1b64a36)
+
+
+```python
+#Grouping the sales by Quarter and check for the sales on holidays
+holiday_analysis_df.groupby('Quarter').agg({'Weekly_Sales':'std'})
+pd.pivot_table(holiday_analysis_df, index=["Quarter",'Holiday'], aggfunc={'Weekly_Sales':np.mean})
+```
+
+![image](https://github.com/swethamurthy25/-Time-Series-Forecasting-using-Walmart-Dataset/assets/112581595/73e01883-e0c6-4aff-adbb-2a030f915187)
+
+```python
+#SUM OF WEEKLY SALES IS HIGHER IN NON-HOLIDAY WEEKS
+pd.pivot_table(holiday_analysis_df, index=["Holiday_Flag"], aggfunc={'Weekly_Sales':'sum', 'CPI':np.mean})
+```
+
+![image](https://github.com/swethamurthy25/-Time-Series-Forecasting-using-Walmart-Dataset/assets/112581595/18b0d7b9-b225-4b97-88ed-306d8d6d4fbe)
+
+
+## Q5: Which quarter has the highest and lowest unemployment rate?
+
+Q1 has the highest unemployment rate.
+
+```python
+#Q5: Which quarter has the highest and lowest unemployment rate?
+q_unemp=walmart_sales.groupby('Quarter', as_index=False).agg(Mean_Unemployment_Rate=('Unemployment','mean'))
+q_unemp
+```
+
+![image](https://github.com/swethamurthy25/-Time-Series-Forecasting-using-Walmart-Dataset/assets/112581595/82abf3a2-62ba-4fde-8f1c-7506a248bd2b)
+
+
+```python
+#Visual Representation
+fig, ax = plt.subplots(figsize=(5,5))
+sns.barplot(data=q_unemp, x="Quarter", y="Mean_Unemployment_Rate", ax=ax)
+#Consultion/Results
+print("Q1 has higher Unemployment Rate and Q3 has lower Unemployment Rate")
+```
+
+![image](https://github.com/swethamurthy25/-Time-Series-Forecasting-using-Walmart-Dataset/assets/112581595/f6723dfa-c7d8-4c58-a4ee-e5471bad769c)
+
+![image](https://github.com/swethamurthy25/-Time-Series-Forecasting-using-Walmart-Dataset/assets/112581595/12e1b04a-df7f-4694-a687-c35934fb0693)
+
+
+____________________________________________________________________________________________________________________________________________________________
