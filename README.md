@@ -49,3 +49,41 @@ The first phase is about understanding the project requirements and objectives f
 
 The second step is data understanding where any quality issues pertaining to the data are identified. It is also the phase in which an analyst goes on to find interesting subsets to form hypotheses for hidden information. Here, we have chosen the appropriate dataset relevant to sales forecasting. The dataset also includes information on factors that affect sales, such as holidays, weather, fuel prices, CPI, and unemployment. 
 
+### Data Preparation
+
+The data preparation phase covers all the activities to build the final dataset from raw data. To perform the sales forecasts on our dataset, we would need to eliminate the null values to change the data into a processing format. This project will identify the three most important aspects - seasonality, autocorrelation, and stationarity.
+
+### Data Modelling
+
+It is the phase in which an analyst decides on the appropriate modeling techniques.  In this project, we are going to use descriptive analysis which is used to identify the patterns in time series data like trends, cycles, or seasonal variations. Additionally, we are going to use a forecasting model that uses historical data as a model for future data, predicting scenarios that could happen along the future plot points. Exploratory analysis is used to highlight the main characteristics of time series data in the visual format.
+
+### Model Evaluation
+
+The analyst here selects the models that fit the best for the business objectives. The steps - assess the outcomes, examine the process, and choose the future steps are iterative, and we will go back and forth until the below-mentioned questions are satisfied. At last, we must ensure that the modeling strategy resolves the initial business requirement.
+
+### Deployment
+
+It is the final stage where the chosen models are put into use to predict the outcome. Based on the predictors, this phase primarily aims to determine if a certain store's sales will increase or not.
+_______________________________________________________________________________________________________________________________________
+
+## Proposed estimators and models to be employed
+
+To analyze current data trends and forecast future events, there are numerous time series analysis models and techniques available. Time series analysis involves a wide range of data categories and variances; thus, analysts occasionally must create intricate models. We cannot generalize a particular model to all samples or account for all variations. A lack of fit may result from models that are overly complicated or that attempt to perform too many things. Models that are poorly fitted or overfit fail to discern between real relationships and random error, skewing analysis and producing inaccurate forecasts.
+
+We are using the combinations of the below models in our project:
+
+### Classification: 
+We have identified and classified the data into categories.
+
+### Descriptive Analysis:
+We identified the patterns in time series data like trends, cycles, or seasonal variations.
+
+### Explanative Analysis: 
+We tried to comprehend the data, the links between the data, and cause and effect.
+
+### Exploratory Analysis: 
+We highlighted the main characteristics of the time series data in a visual format.
+
+_______________________________________________________________________________________________________________________________________
+
+
